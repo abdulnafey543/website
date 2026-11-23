@@ -1,0 +1,79 @@
+<!--
+  Name  : Abdul Nafey Baig
+  Class : BSSE 1 A
+  Roll  : 26L-3020
+  Lab 9 - Task 03 : Hotel reservation form
+-->
+<html>
+<head>
+    <title>Task 03</title>
+    <style>
+        body  { background-color: #dedede; font-family: Verdana, sans-serif; }
+        h2    { color: red; text-align: center; }
+        table { background-color: #c8e2fb; border: 3px solid black; margin: auto; }
+        td    { border: 1px solid black; padding: 6px; }
+        td.label { text-align: right; font-weight: bold; font-family: "Times New Roman", serif; }
+    </style>
+</head>
+<body>
+    <h2>Continental Hotel Reservation Form</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td class="label">Name</td>
+                <td><input type="text" name="name" placeholder="Enter your name" size="30"></td>
+            </tr>
+            <tr>
+                <td class="label">eMail</td>
+                <td><input type="email" name="email" value="info@continental.pk" size="30"></td>
+            </tr>
+            <tr>
+                <td class="label">Mobile No</td>
+                <td><input type="text" name="mobile" placeholder="Enter your cell number" size="30"></td>
+            </tr>
+            <tr>
+                <td class="label">Arrival Time</td>
+                <td><input type="text" name="arrival" placeholder="Enter your arrival time"></td>
+            </tr>
+            <tr>
+                <td class="label">Departure</td>
+                <td><input type="date" name="dep_date"> <input type="time" name="dep_time"></td>
+            </tr>
+            <tr>
+                <td class="label">Room Type</td>
+                <td>
+                    <input type="radio" name="room" value="single"> Single
+                    <input type="radio" name="room" value="double"> Double<br>
+                    <input type="radio" name="room" value="suite"> Presidential Suite
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Preferences</td>
+                <td>
+                    <input type="checkbox" name="pref" value="nonsmoking"> Non-Smoking<br>
+                    <input type="checkbox" name="pref" value="internet"> Internet<br>
+                    <input type="checkbox" name="pref" value="mattress"> Firm Mattress
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Mode of Payment</td>
+                <td>
+                    <input type="checkbox" name="pay" value="cash"> Cash
+                    <input type="checkbox" name="pay" value="check"> Check<br>
+                    <input type="checkbox" name="pay" value="card"> Credit Card
+                    <select name="card">
+                        <option>Select Card</option>
+                        <option>Visa</option>
+                        <option>MasterCard</option>
+                        <option>American Express</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Send Data"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
